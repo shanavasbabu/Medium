@@ -1,0 +1,80 @@
+<html>  
+      
+        <head>  
+        <title> Arithmetic Operations</title>  
+        <script language="javascript" type="text/javascript">  
+        function multiply(){  
+        a=Number(document.calculator.number1.value);  
+        b=Number(document.calculator.number2.value);  
+        c=a*b;  
+        document.calculator.total.value=c;  
+        }  
+        </script>
+        <script language="javascript" type="text/javascript">  
+        function addition(){  
+        a=Number(document.calculator.number1.value);  
+        b=Number(document.calculator.number2.value);  
+        c=a+b;  
+        document.calculator.total.value=c;  
+        }  
+        </script>  
+          
+        <script language="javascript" type="text/javascript">  
+        function subtraction(){  
+        a=Number(document.calculator.number1.value);  
+        b=Number(document.calculator.number2.value);  
+        c=a-b;  
+        document.calculator.total.value=c;  
+        }  
+        </script>  
+          
+        <script language="javascript" type="text/javascript">  
+        function division(){  
+        a=Number(document.calculator.number1.value);  
+        b=Number(document.calculator.number2.value);  
+        c=a/b;  
+        document.calculator.total.value=c;  
+        }  
+        </script>  
+          
+        <script language="javascript" type="text/javascript">  
+        function modulus(){  
+        a=Number(document.calculator.number1.value);  
+        b=Number(document.calculator.number2.value);  
+        c=a%b;  
+        document.calculator.total.value=c;  
+        }  
+        </script>  
+          
+        </head>  
+          
+        <body bgcolor="orange">  
+          
+      <h1><center>Online Calculator</center></h1>
+      <br><br><br>
+      <center>
+                <fieldset style="border-color: black;width: 50%;height: 40%;padding: 30px;">
+        <form name="calculator">  
+          
+                
+        Number 1: <input type="text" name="number1">   
+           <br><br>
+          
+        Number 2: <input type="text" name="number2">   
+          
+          <br><br>
+        Get Result: <input type="text" name="total">   
+          <br><br>
+          
+        <input type="button" value="ADD" onclick="javascript:addition();">  
+        <input type="button" value="SUB" onclick="javascript:subtraction();">  
+        <input type="button" value="MUL" onclick="javascript:multiply();">  
+        <input type="button" value="DIV" onclick="javascript:division();">  
+        <input type="button" value="MOD" onclick="javascript:modulus();">  <br><br>
+        <a href="log.html" style="text-decoration: none;color: black">Another Operations</a><br><br>
+        <a href="product.html" style="text-decoration: none;color: black">Product validation</a>
+    </center></fieldset>
+        </form>  
+         
+        </body>  
+        </html>  

@@ -1,0 +1,39 @@
+<html>
+    <head>
+
+        <title>
+            Additional Operations
+        </title>
+        <script>
+                 function m()
+                 {
+                   f.b.value=Math.log(f.a.value); 
+                 }
+                 function mm()
+                 {
+                   f.c.value= Math.floor((Math.random() * 1000) + 1);
+                 }
+        </script>
+    </head>
+    <body bgcolor="green">
+            <center>
+        <fieldset style="width: 30%">
+        
+            <br><br>
+        <h1>
+            <p>
+                <center>Additional Operations</center>
+            </p>
+        </h1>
+        <form name="f" method="POST"><label>Enter the value to get Log</label><br><br>
+        <input type="number" name="a" placeholder="Enter the value" required><br><br>
+        <input type="button" value="Get" onclick="m()"><br><br>
+        <input type="number" name="b"><br><br><br><br>
+        <input type="button" value="Random" onclick="mm()"><br><br>
+        <input type="number" name="c"><br><br>
+        <a href="calculator.html" style="text-decoration: none;color: black">Main Page</a><br><br>
+        <a href="product.html" style="text-decoration: none;color: black">Product validation</a>
+    </fieldset>
+        </form></center>
+    </body>
+</html>

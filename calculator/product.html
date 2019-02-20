@@ -1,0 +1,46 @@
+<html>
+   <head>
+      <title>Date and Time Methods</title>
+      <script type = "text/javascript">
+function calc()
+{
+ var x = parseInt(product.pro.value);
+         var current = new Date(); 
+ var a = product.expdate.value;    
+    var cur = new Date(a);    
+if( (x == 1) || (x == 2) || (x == 3) )
+{    
+if ( cur > current )
+{
+window.alert( "not expired");
+}
+else
+{
+window.alert( "expired");
+}  
+}
+else
+{
+window.alert("wrong choice");
+}
+  }          
+      </script>
+   </head>
+<body bgcolor="green">
+<center>
+<h2> Enter any product to find expiry date <br><br> 1.fruit  2.vegetables 3.biscuite </h2>
+<h3>
+<br>
+<form name="product">
+Enter product code: 
+&nbsp;
+<input type="number" name="pro" ><br><br>
+Enter product date:
+&nbsp;
+<input type="date" name="expdate" ><br><br>
+<input type="button" name="calculate" value="submit" onclick="calc()">
+</form>
+</h3>
+</center>
+</body>
+</html>
